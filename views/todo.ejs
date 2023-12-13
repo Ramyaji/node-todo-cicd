@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>My todolist Project</title>
+        <title>Sample Node.js App</title>
         <style>
             a {
                 text-decoration: none;
@@ -14,9 +14,9 @@
     </head>
 
     <body>
-      <h1> Jenkins CICD with Amazon EKS </h1>
-<h2>Automating deployment using docker-compose </h2>
-        <ul>
+      <h1> Sample todo applications </h1>
+
+      <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
                 <a href="/todo/delete/<%= index %>">✘</a>
@@ -28,11 +28,12 @@
 
         <form action="/todo/add/" method="post">
             <p>
-                <label for="newtodo">What shoud I do?</label>
+                <label for="newtodo"> Please Enter your task</label>
                 <input type="text" name="newtodo" id="newtodo" autofocus />
                 <input type="submit" value="Add" />
             </p>
         </form>
+
     </body>
 
 </html>
